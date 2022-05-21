@@ -1,0 +1,105 @@
+.hotel-norway {
+    padding: 80px 0;
+    
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__body {
+      flex: 0 0 690px;
+    }
+
+    &__text {
+      width: 584px;
+      margin-bottom: 16px;
+    }
+
+    &__text2 {
+      width: 584px;
+      margin-bottom: 32px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1230px) {
+
+    .hotel-norway {
+      padding: 50px 0;
+    }
+
+    .hotel-norway__body {
+      flex: 0 0 600px;
+      padding-left: 30px;
+    }
+
+    .hotel-norway__text,
+    .hotel-norway__text2 {
+      width: 565px;
+    }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+
+    .hotel-norway {
+      padding: 40px 0;
+    }
+
+    .hotel-norway__body {
+      flex: 0 0 500px;
+      padding-left: 30px;
+    }
+
+    .hotel-norway__title {
+      font-size: 32px;
+    }
+
+    .hotel-norway__text,
+    .hotel-norway__text2 {
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    .hotel-norway__text2 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+
+    .hotel-norway {
+      padding: 25px 0;
+    }
+
+    .hotel-norway__container {
+      flex-wrap: wrap-reverse;
+    }
+
+    .hotel-img {
+      flex: 1 1 100%;
+    }
+
+    .hotel-norway__body {
+      flex: 1 1 100%;
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
+
+    .hotel-norway__title {
+      margin-bottom: 20px;
+    }
+    
+    .hotel-norway__text,
+    .hotel-norway__text2 {
+      width: 100%;
+      font-size: 16px;
+    }
+  }

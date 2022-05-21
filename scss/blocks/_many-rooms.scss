@@ -1,0 +1,188 @@
+.many-rooms {
+    padding: 80px 0;
+
+    &__body {
+      align-items: center;
+      text-align: center;
+      margin-bottom: 88px;
+    }
+
+    &__text {
+      width: 588px;
+      display: inline-block;
+    }
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  
+    &__item {
+      display: inline-block;
+    }
+
+    &__image {
+      margin-bottom: 32px;
+      padding: 0 0 127.5% 0;
+      position: relative;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: $gray;
+      margin-bottom: 32px;
+    }
+
+    &__link {
+      align-items: center;
+    }
+    
+    &__link-icon {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: $gray-light;
+      text-decoration: none;
+      background: url(../img/card-right.png) right no-repeat;
+      padding-right: 32px;
+
+      transition: right ease 0.2s;
+      position: relative;
+      right: 0;
+
+      &:hover {
+        right: -10px;
+      }
+    }
+
+
+  }
+
+
+  @media (max-width: 1230px) {
+
+    .many-rooms {
+      padding: 50px 0;
+    }
+
+    .many-rooms__body {
+      margin-bottom: 50px;
+    }
+
+    .card__image,
+    .card__text {
+      margin-bottom: 25px;
+    }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+
+ .many-rooms {
+    padding: 40px 0;
+  }
+
+  .many-rooms__body {
+    margin-bottom: 40px;
+  }
+
+  .many-rooms__title {
+    font-size: 32px;
+  }
+
+  .many-rooms__text {
+    font-size: 16px;
+  }
+
+  .card__image,
+  .card__text {
+    margin-bottom: 20px;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__text {
+    font-size: 15px;
+  }
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+
+    .many-rooms {
+      padding: 25px 0;
+    }
+
+    .many-rooms__body {
+      margin-bottom: 30px;
+    }
+
+    .many-rooms__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .many-rooms__text {
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card__image,
+    .card__text {
+      margin-bottom: 20px;
+    }
+
+    .card__title {
+      font-size: 22px;
+    }
+
+    .card__text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      display: block;
+      flex-wrap: wrap;
+    }
+
+    .card__link {
+      padding-bottom: 15px;
+    }
+
+    .card__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }

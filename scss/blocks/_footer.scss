@@ -1,0 +1,195 @@
+.footer {
+    padding: 120px 0;
+    background: #0b265a;
+    color: $white;
+    margin: 0;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo-text-icon {
+      display: inline-block;
+    }
+
+    &__logo-text {
+      width: 186px;
+    }
+
+    &__logo {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: -0.01em;
+      color: $white;
+      margin-bottom: 13px;
+
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #d9dbde;
+      margin-bottom: 36px;
+    }
+
+    &__icon-link {
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+
+    &__nav-link {
+      display: flex;
+    }
+
+    &__nav-link-rooms {
+      margin-right: 100px;
+    }
+
+    &__nav-link-reservation {
+      margin-right: 141px;
+    }
+
+  }
+  .rooms-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rooms-title-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: $white;
+    text-decoration: none;
+  }
+
+  .rooms-text-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #d9dbde;
+  }
+
+  .rooms-title-link,
+  .rooms-text-link {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 1230px) {
+
+    .footer {
+      padding: 90px 0;
+    }
+
+    .footer__nav-link-reservation {
+      margin-right: 120px;
+    }
+
+    .rooms-title-link,
+    .rooms-text-link {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+
+    .footer {
+      padding: 70px 0;
+    }
+
+    .footer__nav-link-rooms {
+      margin-right: 60px;
+    }
+
+    .footer__nav-link-reservation {
+      margin-right: 60px;
+    }
+
+    .rooms-title-link,
+    .rooms-text-link {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+  
+  
+  @media (max-width: 767.98px) {
+
+    .footer {
+      padding: 40px 0;
+    }
+
+    .footer__container {
+      flex-wrap: wrap;
+    }
+
+    .footer__logo-text-icon {
+      flex: 1 1 100%;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .footer__logo-text {
+      display: inline-block;
+    }
+
+    .footer__text {
+      margin-bottom: 15px;
+    }
+
+    .footer__nav-link {
+      flex: 1 1 100%;
+      justify-content: space-around;
+    }
+
+    .footer__nav-link-rooms {
+      margin-right: 20px;
+    }
+
+    .footer__nav-link-reservation {
+      margin-right: 20px;
+    }
+
+    .rooms-title-link {
+      font-size: 14px;
+    }
+
+    .rooms-text-link {
+      font-size: 12px;
+    }
+
+    .rooms-title-link,
+    .rooms-text-link {
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }

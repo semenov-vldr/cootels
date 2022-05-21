@@ -1,0 +1,143 @@
+.reviews {
+    padding: 80px 0;
+  }
+  .slider {
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &__body {
+      flex: 0 0 793px;
+    }
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: $dark-blue;
+    }
+    &__image {
+      margin: 62px 0 44px 0;
+    }
+    &__img {
+      display: inline-block;
+    }
+    &__text {
+      display: inline-block;
+      width: 793px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: $gray;
+      margin-bottom: 40px;
+    }
+    &__user-name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      color: $dark-blue;
+      margin-bottom: 24px;
+    }
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-dots li {
+    list-style: none;
+    margin: 0 12px;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: rgba(250, 176, 71, 0.35);
+    border: none;
+    border-radius: 50%;
+  }
+  .slick-dots li.slick-active button {
+    background: #fab047;
+    width: 16px;
+    height: 16px;
+  }
+
+
+
+  @media (max-width: 1230px) {
+    .reviews {
+        padding: 50px 0;
+      }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+
+    .reviews {
+        padding: 40px 0;
+      }
+
+      .slider__body {
+        flex: 0 0 700px;
+      }
+
+      .slider__title {
+        font-size: 32px;
+      }
+
+      .slider__text {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+      }
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+
+    .reviews {
+        padding: 25px 0;
+      }
+
+      .slider__body {
+        flex: 1 1 auto;
+        margin: 0 5px;
+      }
+
+      .slider__title {
+        font-size: 30px;
+        letter-spacing: -0.01em;
+      }
+
+      .slider__image {
+        margin: 42px 0 24px 0;
+      }
+
+      .slider__text {
+        display: inline-block;
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      
+      .slider__user-name {
+        margin-bottom: 20px;
+      }
+  }
+

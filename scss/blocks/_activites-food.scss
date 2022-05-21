@@ -1,0 +1,155 @@
+.activities-food {
+    padding: 80px 0;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .activities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &__body {
+      flex: 0 0 584px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+  
+  .food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__body {
+      flex: 0 0 584px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+    
+    &__img {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1230px) {
+
+    .activities-food {
+      padding: 50px 0;
+    }
+
+    .activities__body {
+      flex: 0 0 560px;
+      padding-right: 30px;
+    }
+
+    .food__body {
+      flex: 0 0 560px;
+      padding-left: 30px;
+    }
+  }
+
+
+
+  @media (max-width: 991.98px) {
+
+    .activities-food {
+      padding: 40px 0;
+    }
+
+    .activities__body {
+      flex: 0 0 470px;
+      padding-right: 30px;
+    }
+
+    .activities__title {
+      font-size: 32px;
+    }
+
+    .activities__text {
+      font-size: 16px;
+    }
+
+    .food__body {
+      flex: 0 0 470px;
+      padding-left: 30px;
+    }
+
+    .food__title {
+      font-size: 32px;
+    }
+
+    .food__text {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+
+    .activities-food {
+      padding: 25px 0;
+    }
+
+    .activities {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .activities__body {
+      flex: 1 1 100%;
+      padding-right: 0;
+      margin-bottom: 25px;
+    }
+
+    .activities__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .activities__text {
+      font-size: 16px;
+    }
+
+    .activities__img {
+      flex: 1 1 100%;
+    }
+
+    .food {
+      flex-wrap: wrap-reverse;
+    }
+
+    .food__img {
+      flex: 1 1 100%;
+    }
+
+    .food__body {
+      flex: 1 1 100%;
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
+
+    .food__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .food__text {
+      font-size: 16px;
+    }
+
+  }
